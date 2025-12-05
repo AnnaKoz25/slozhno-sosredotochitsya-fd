@@ -49,7 +49,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   font-size: var(--main-font-size);
@@ -78,7 +78,7 @@
   flex-direction: column;
   gap: 13px;
   color: var(--main-content-color);
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   font-size: var(--main-font-size);
@@ -107,7 +107,7 @@
 }
 
 .header-title {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-style: normal;
   font-weight: var(--font-weight-bold);
   font-size: var(--main-title-font-size);
@@ -118,7 +118,7 @@
 
 .description {
   align-self: center;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-style: normal;
   font-weight: var(--font-weight-bold);
   font-size: var(--main-font-size);
@@ -142,7 +142,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-style: normal;
   font-weight: var(--font-weight-bold);
   font-size: var(--main-font-size);
@@ -155,6 +155,12 @@
 }
 
 .card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-list__concentration-help {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -251,7 +257,8 @@
   }
 
   .section-title {
-    inline-size: 13em;
+    max-width: 13em;
+    width: 100%;
     justify-self: start;
   }
 
@@ -317,11 +324,12 @@
   }
 
   .section-title {
-    inline-size: 17.5em;
+    max-width: 17.5em;
+    width: 100%;
   }
 
   .section__reasons {
-    grid-template-columns: min-content 2fr;
+    gap: 10px;
   }
 
   .card-list__concentration-reduce {
@@ -330,6 +338,6 @@
   }
 
   .section__concentration-help {
-    grid-template-columns: min-content 2fr;
+    gap: 10px;
   }
 }
